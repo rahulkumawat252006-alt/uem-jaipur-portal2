@@ -5,8 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UEM Jaipur Portal</title>
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
 
@@ -20,8 +19,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 body{
     background:
     linear-gradient(
-        rgba(0,0,0,0.20),
-        rgba(0,0,0,0.20)
+        rgba(0,0,0,.20),
+        rgba(0,0,0,.20)
     ),
     url("myphoto.jpg");
 
@@ -30,7 +29,7 @@ body{
     background-attachment:fixed;
 }
 
-/* HERO */
+/* Hero */
 
 .hero{
     min-height:100vh;
@@ -43,20 +42,15 @@ body{
 .portal-card{
     width:100%;
     max-width:700px;
-
-    background:rgba(0,0,0,0.35);
-
-    backdrop-filter:blur(4px);
-
+    background:rgba(0,0,0,.50);
+    backdrop-filter:blur(6px);
     border-radius:25px;
-    padding:35px;
-
+    padding:30px;
     color:white;
-
     box-shadow:0 10px 30px rgba(0,0,0,.5);
 }
 
-/* LOGO */
+/* Logo */
 
 .logo{
     text-align:center;
@@ -64,19 +58,19 @@ body{
 }
 
 .logo img{
-    width:100px;
-    height:100px;
+    width:90px;
+    height:90px;
     border-radius:50%;
     background:white;
     padding:5px;
 }
 
-/* TITLE */
+/* Heading */
 
 .portal-card h1{
     text-align:center;
-    font-size:32px;
-    margin-bottom:15px;
+    font-size:30px;
+    margin-bottom:12px;
 }
 
 .tagline{
@@ -88,7 +82,7 @@ body{
 .contact{
     text-align:center;
     line-height:2;
-    margin-bottom:25px;
+    margin-bottom:20px;
 }
 
 .contact a{
@@ -96,7 +90,29 @@ body{
     text-decoration:none;
 }
 
-/* BUTTONS */
+/* Student Guide */
+
+.student-guide{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.student-guide img{
+    width:100%;
+    max-width:250px;
+    border-radius:20px;
+    border:4px solid white;
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+.guide-text{
+    color:#ffd700;
+    margin-top:10px;
+    font-weight:bold;
+    font-size:20px;
+}
+
+/* Buttons */
 
 .btn{
     width:100%;
@@ -107,14 +123,12 @@ body{
     text-decoration:none;
     color:white;
 
-    padding:18px 20px;
+    padding:18px;
     margin:15px 0;
 
     border-radius:18px;
 
-    transition:0.3s;
-
-    border:1px solid rgba(255,255,255,0.15);
+    transition:.3s;
 }
 
 .btn:hover{
@@ -132,21 +146,18 @@ body{
 }
 
 .arrow{
-    width:42px;
-    height:42px;
-
+    width:40px;
+    height:40px;
     border-radius:50%;
     background:white;
-
     display:flex;
-    align-items:center;
     justify-content:center;
+    align-items:center;
+    font-weight:bold;
 }
 
-/* DARK BUTTONS */
-
 .home{
-    background:rgba(255,140,0,0.75);
+    background:rgba(255,140,0,.85);
 }
 
 .home .arrow{
@@ -154,7 +165,7 @@ body{
 }
 
 .student{
-    background:rgba(0,86,210,0.75);
+    background:rgba(0,86,210,.85);
 }
 
 .student .arrow{
@@ -162,22 +173,23 @@ body{
 }
 
 .faculty{
-    background:rgba(17,153,142,0.75);
+    background:rgba(17,153,142,.85);
 }
 
 .faculty .arrow{
     color:#11998e;
 }
 
-/* ABOUT */
+/* About */
 
 .about{
-    padding:80px 10%;
     background:white;
+    padding:80px 10%;
     text-align:center;
 }
 
 .about h2{
+    font-size:35px;
     color:#003366;
     margin-bottom:20px;
 }
@@ -185,20 +197,18 @@ body{
 .about p{
     max-width:900px;
     margin:auto;
-    line-height:1.8;
     color:#555;
+    line-height:1.8;
 }
 
-/* FEATURES */
+/* Features */
 
 .features{
-    padding:70px 10%;
     background:#f5f7fa;
+    padding:70px 10%;
 
     display:grid;
-    grid-template-columns:
-    repeat(auto-fit,minmax(250px,1fr));
-
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:25px;
 }
 
@@ -212,6 +222,11 @@ body{
 
 .card:hover{
     transform:translateY(-10px) scale(1.03);
+}
+
+.card i{
+    font-size:45px;
+    margin-bottom:15px;
 }
 
 .education{
@@ -230,21 +245,28 @@ body{
     background:linear-gradient(135deg,#ea580c,#fb923c);
 }
 
-/* CAMPUS */
+/* Campus */
 
 .campus{
-    padding:80px 10%;
     background:white;
     text-align:center;
+    padding:80px 10%;
+}
+
+.campus h2{
+    font-size:35px;
+    color:#003366;
+    margin-bottom:25px;
 }
 
 .campus img{
     width:100%;
     max-width:1000px;
     border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
 }
 
-/* FOOTER */
+/* Footer */
 
 footer{
     background:#001b3a;
@@ -253,22 +275,63 @@ footer{
     padding:30px;
 }
 
-/* MOBILE */
+/* Mobile */
 
 @media(max-width:768px){
 
-.portal-card{
-    padding:20px;
-}
+    .portal-card{
+        padding:20px;
+    }
 
-.portal-card h1{
-    font-size:24px;
-}
+    .portal-card h1{
+        font-size:22px;
+        line-height:1.4;
+    }
 
-.features{
-    grid-template-columns:1fr;
-}
+    .logo img{
+        width:75px;
+        height:75px;
+    }
 
+    .contact{
+        font-size:13px;
+    }
+
+    .student-guide img{
+        max-width:200px;
+    }
+
+    .guide-text{
+        font-size:16px;
+    }
+
+    .btn{
+        padding:15px;
+    }
+
+    .icon{
+        font-size:22px;
+    }
+
+    .arrow{
+        width:34px;
+        height:34px;
+    }
+
+    .about,
+    .campus{
+        padding:50px 20px;
+    }
+
+    .about h2,
+    .campus h2{
+        font-size:28px;
+    }
+
+    .features{
+        grid-template-columns:1fr;
+        padding:50px 20px;
+    }
 }
 
 </style>
@@ -280,7 +343,7 @@ footer{
 <div class="portal-card">
 
 <div class="logo">
-<img src="logo.png" alt="UEM Logo">
+    <img src="logo.png" alt="Logo">
 </div>
 
 <h1>University of Engineering and Management, Jaipur (204)</h1>
@@ -290,17 +353,17 @@ footer{
 </p>
 
 <div class="contact">
+    <p>📧 admissions@iem.edu.in</p>
+    <p>📞 8010700500 / 8069795497</p>
+</div>
 
-<p>
-🔍
-<a href="https://uem.edu.in/uem-jaipur" target="_blank">
-Search UEM Jaipur
-</a>
-</p>
+<div class="student-guide">
 
-<p>📧 admissions@iem.edu.in</p>
+    myphoto.jpg
 
-<p>📞 Admission Helpline: 8010700500 / 8069795497</p>
+    <div class="guide-text">
+        👉 Click Student Login
+    </div>
 
 </div>
 
@@ -310,15 +373,15 @@ target="_blank">
 
 <div class="btn-content">
 <span class="icon">🏠</span>
+
 <div>
 <strong>Home</strong><br>
-<small>Visit Official Website</small>
-</div>
+<small>Official Website</small>
 </div>
 
-<div class="arrow">
-<i class="fas fa-arrow-right"></i>
 </div>
+
+<div class="arrow">➜</div>
 
 </a>
 
@@ -328,15 +391,15 @@ target="_blank">
 
 <div class="btn-content">
 <span class="icon">🎓</span>
+
 <div>
 <strong>Student Login</strong><br>
 <small>Access Student Dashboard</small>
 </div>
+
 </div>
 
-<div class="arrow">
-<i class="fas fa-arrow-right"></i>
-</div>
+<div class="arrow">➜</div>
 
 </a>
 
@@ -346,47 +409,54 @@ target="_blank">
 
 <div class="btn-content">
 <span class="icon">👨‍🏫</span>
+
 <div>
 <strong>Faculty Login</strong><br>
 <small>Access Faculty Dashboard</small>
 </div>
+
 </div>
 
-<div class="arrow">
-<i class="fas fa-arrow-right"></i>
-</div>
+<div class="arrow">➜</div>
 
 </a>
 
 </div>
+
 </section>
 
 <section class="about">
+
 <h2>About UEM Jaipur</h2>
 
 <p>
 University of Engineering and Management (UEM), Jaipur is one of Rajasthan's leading universities known for quality education, research, innovation, industry collaborations, excellent placements, and modern infrastructure.
 </p>
+
 </section>
 
 <section class="features">
 
 <div class="card education">
+<i class="fas fa-graduation-cap"></i>
 <h3>Quality Education</h3>
 <p>Industry-oriented curriculum and expert faculty.</p>
 </div>
 
 <div class="card placement">
+<i class="fas fa-briefcase"></i>
 <h3>Placements</h3>
 <p>Outstanding placement and internship opportunities.</p>
 </div>
 
 <div class="card global">
+<i class="fas fa-globe"></i>
 <h3>Global Exposure</h3>
 <p>International collaborations and study programs.</p>
 </div>
 
 <div class="card labs">
+<i class="fas fa-laptop-code"></i>
 <h3>Modern Labs</h3>
 <p>Advanced laboratories and research facilities.</p>
 </div>
@@ -394,6 +464,7 @@ University of Engineering and Management (UEM), Jaipur is one of Rajasthan's lea
 </section>
 
 <section class="campus">
+
 <h2>Our Beautiful Campus</h2>
 
 <img src="uem-campus.jpg" alt="UEM Campus">
@@ -401,10 +472,16 @@ University of Engineering and Management (UEM), Jaipur is one of Rajasthan's lea
 </section>
 
 <footer>
+
 <h3>University of Engineering and Management, Jaipur</h3>
+
 <p>📧 admissions@iem.edu.in</p>
 <p>📞 8010700500 / 8069795497</p>
-<p>© 2026 UEM Jaipur. All Rights Reserved.</p>
+
+<p style="margin-top:10px;">
+© 2026 UEM Jaipur. All Rights Reserved.
+</p>
+
 </footer>
 
 </body>
